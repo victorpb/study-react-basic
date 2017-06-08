@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/victorpb/study-react-basic/issues"
   },
-  "homepage": "https://github.com/victorpb/study-react-basic#readme"
+  "homepage": "https://github.com/victorpb/study-react-basic#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {}
 }
