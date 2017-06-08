@@ -4,8 +4,8 @@ var Nav = React.createClass({
         <nav className="navbar navbar-default">
             <div className="container">
                 <div className="navbar-header">
-                    <a href="#" className="navbar-brand">
-                        React
+                    <a href={ this.props.linkUrl } className="navbar-brand">
+                        { this.props.title }
                     </a>
                 </div>
             </div>
@@ -14,7 +14,24 @@ var Nav = React.createClass({
     }
 });
 
+var Title = React.createClass({
+    render: function (){
+        return (
+            <div className="container">
+                <div className="row">
+                    <h1> { this.props.title } </h1>
+                </div>
+            </div>  
+        );
+    }
+});
+
 ReactDOM.render(
-    < Nav />,
-     document.getElementById('root') 
-    );
+    < Nav title="Learn React!" linkUrl="index.html"/>,
+     document.getElementById('nav') 
+);
+
+ReactDOM.render(
+    < Title title="Learning React" />,
+     document.getElementById('title') 
+);
