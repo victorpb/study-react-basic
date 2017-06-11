@@ -15,7 +15,7 @@ var Button = React.createClass({
     },
 
     render: function () {
-        var btnClass = this.state.click ? 'btn btn-success' : 'btn btn-default';
+        var btnClass = this.state.click ? 'btn btn-default  active' : 'btn btn-success';
         var text = this.state.click ? this.props.textActive : this.props.text;
         return React.createElement(
             'button',

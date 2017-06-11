@@ -8,7 +8,8 @@ var Page = React.createClass({
                 <div className="container">
                     < Title title="Learning React" />
                     <div className="row">
-                        < Button text="My component button" textActive="Button Active"/>
+                        <Form />
+                        < Button text="Submit" textActive="Wait..."/>
                     </div>
                 </div>
             </myElement>

@@ -14,7 +14,8 @@ var Page = React.createClass({
                 React.createElement(
                     "div",
                     { className: "row" },
-                    React.createElement(Button, { text: "My component button", textActive: "Button Active" })
+                    React.createElement(Form, null),
+                    React.createElement(Button, { text: "Submit", textActive: "Wait..." })
                 )
             )
         );
