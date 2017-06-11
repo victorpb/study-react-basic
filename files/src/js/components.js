@@ -1,3 +1,4 @@
+
 var Nav = React.createClass({
     render: function(){
     return (
@@ -17,11 +18,9 @@ var Nav = React.createClass({
 var Title = React.createClass({
     render: function (){
         return (
-            <div className="container">
                 <div className="row">
                     <h1> { this.props.title } </h1>
-                </div>
-            </div>  
+                </div> 
         );
     }
 });
@@ -49,18 +48,3 @@ var Button = React.createClass({
        );
     }
 });
-
-ReactDOM.render(
-    < Nav title="Learn React!" linkUrl="index.html"/>,
-     document.getElementById('nav') 
-);
-
-ReactDOM.render(
-    < Title title="Learning React" />,
-     document.getElementById('title') 
-);
-
-ReactDOM.render(
-    < Button text="My component button" textActive="Button Active"/>,
-     document.getElementById('button') 
-);
