@@ -8,9 +8,6 @@ var Page = React.createClass({
         ]}
     },
     handleContactSubmit: function(contact){
-        // console.log(contact)
-        // this.setState({data:this.state.data.push(contact)})
-        // console.log(this.state.data)
         var newContacts = this.state.data;
         newContacts.push(contact)
         this.setState({data: newContacts});
